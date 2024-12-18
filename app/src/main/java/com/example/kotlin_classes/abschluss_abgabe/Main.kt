@@ -9,18 +9,22 @@ import com.example.kotlin_classes.abschluss_abgabe.models.Genre
  * and displays the final status of all books.
  */
 fun main() {
+
     // Create an instance of LibraryManager to handle library operations.
     val manager = LibraryManager()
 
+    // Initialize the library: add books and set up the address.
     manager.setupLibrary()
 
-    // Step 2: Display all available genres with their descriptions.
+    // Display all available genres with their descriptions.
     println("\n========== Genres ==========")
     Genre.values().forEach { genre ->
         genre.printDescription()
     }
 
+    // Simulate actions performed by a library member.
     manager.simulateMemberActions()
 
+    //  Display the final status of all books in the library.
     manager.displayLibraryStatus()
 }
