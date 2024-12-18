@@ -1,0 +1,12 @@
+# Ignore IDE settings
+.idea/
+
+# Ignore build directories
+build/
+app/build/
+
+# Ignore Gradle cache
+.gradle/
+
+# Ignore local properties
+local.properties
